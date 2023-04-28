@@ -19,13 +19,13 @@ for index_point in range(0, nb_points+1):
     numpy.append(y_values, f(a + index_point*step))
 gradient = numpy.gradient(y_values, x_values)
 
-# y_slice = slice(3000, 7000)
-# # print(y_values[y_slice])
-# sum_y_slice = sum(y_values[y_slice])/len(y_values[y_slice])
-# # print(sum_y_slice)
+y_slice = slice(3000, 7000)
+# print(y_values[y_slice])
+sum_y_slice = sum(y_values[y_slice])/len(y_values[y_slice])
+# print(sum_y_slice)
 
-# std_dev = numpy.std(y_values[y_slice])
-# # print(std_dev)
+std_dev = numpy.std(y_values[y_slice])
+# print(std_dev)
 
 
 def f_x(x) :
